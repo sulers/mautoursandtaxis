@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently asked questions about Zanzibar tours, taxis, payments, and travel tips – answered by Mau Tours.">
+    <title>Mau Tours and Taxis | FAQs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <style>
+        .faqs-hero {
+            background: linear-gradient(135deg, #FEF9EF 0%, #FFF3E5 100%);
+            padding: 60px 0;
+            text-align: center;
+        }
+        .faqs-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+        .faqs-container {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+        .accordion-item {
+            background: white;
+            border-radius: 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+        .accordion-question {
+            background: white;
+            padding: 20px 24px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.2s;
+            border-bottom: 1px solid #f0e4d8;
+        }
+        .accordion-question:hover {
+            background-color: #FFF6ED;
+        }
+        .accordion-question i {
+            color: #F26B4F;
+            transition: transform 0.3s;
+        }
+        .accordion-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 24px;
+            color: #3E5A6B;
+            line-height: 1.6;
+        }
+        .accordion-item.active .accordion-answer {
+            max-height: 300px;
+            padding: 20px 24px;
+        }
+        .accordion-item.active .accordion-question i {
+            transform: rotate(180deg);
+        }
+        @media (max-width: 768px) {
+            .faqs-hero h1 { font-size: 2rem; }
+            .accordion-question { padding: 16px 20px; font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-flex">
+        <div class="logo-area">
+            <img src="images/logo.png" alt="Mau Tours and Taxis Logo" class="logo-img">
+            <div class="logo-text">
+                <h1 class="typewriter-title"></h1>
+                <span>Zanzibar</span>
+            </div>
+        </div>
+        <div class="menu-toggle" id="mobileToggle"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faqs.html" class="active">FAQs</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <div class="faqs-hero">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Everything you need to know before visiting Zanzibar – and about our services.</p>
+        </div>
+    </div>
+
+    <div class="container faqs-container">
+        <div class="accordion-item">
+            <div class="accordion-question">Is Zanzibar safe for tourists? <i class="fas fa-chevron-down"></i></div>
+            <div class="accordion-answer">Yes, Zanzibar is very safe for tourists. The local people are welcoming, and the main tourist areas (Stone Town, Nungwi, Kendwa) have good security. However, take normal precautions: don't walk alone at night on isolated beaches and keep valuables safe.</div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-question">Do I need a visa for Zanzibar? <i class="fas fa-chevron-down"></i></div>
+            <div class="accordion-answer">Most nationalities can get a visa on arrival at Zanzibar airport (or Tanzania mainland). It costs around $50 USD. You can also apply online for an e‑visa before travel. We recommend checking with your local Tanzanian embassy.</div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-question">What is the best time to visit Zanzibar? <i class="fas fa-chevron-down"></i></div>
+            <div class="accordion-answer">The best time is June to October (dry season) and December to February (warm and sunny). The long rains are March–May, but you can still get good deals and fewer crowds.</div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-question">Do you offer airport pickup? <i class="fas fa-chevron-down"></i></div>
+            <div class="accordion-answer">Absolutely. We provide 24/7 airport transfers from Zanzibar International Airport (ZNZ) to anywhere on the island. Our driver will meet you with a name sign, help with luggage, and take you safely to your hotel.</div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-question">Can I customise a tour? <i class="fas fa-chevron-down"></i></div>
+            <div class="accordion-answer">Yes! We specialise in tailor‑made itineraries. Tell us what you like – beaches, history, food, adventure – and we'll create a private tour just for you, at your pace.</div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-question">What payment methods do you accept? <i class="fas fa-chevron-down"></i></div>
+            <div class="accordion-answer">We accept cash (USD or Tanzanian Shillings), bank transfer, and mobile money (M‑Pesa, Tigo Pesa). A deposit may be required for extended tours. Credit cards are not accepted directly on our site, but we can arrange payments via secure link.</div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-question">Are your guides fluent in English? <i class="fas fa-chevron-down"></i></div>
+            <div class="accordion-answer">All our guides speak excellent English. Many also speak Italian, French, German, and Spanish. We'll match you with a guide that fits your language preference.</div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-question">What should I pack for Zanzibar? <i class="fas fa-chevron-down"></i></div>
+            <div class="accordion-answer">Light clothing, swimwear, sunscreen, insect repellent, a hat, and modest clothes for visiting Stone Town and villages. Don't forget your camera and a reusable water bottle!</div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col"><h4>Mau Tours & Taxis</h4><p>Your trusted partner for exploring Zanzibar. Reliable taxis, authentic tours, local expertise.</p></div>
+            <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="blogs.html">Blogs</a><a href="gallery.html">Gallery</a><a href="faqs.html">FAQs</a></div>
+            <div class="footer-col"><h4>Contact</h4><p><i class="fas fa-phone-alt"></i> +255 777 123 456</p><p><i class="fas fa-envelope"></i> info@mautours.co.tz</p><p><i class="fas fa-map-marker-alt"></i> Stone Town, Zanzibar</p></div>
+            <div class="footer-col"><h4>Follow Us</h4><div class="social-icons"><a href="#"><i class="fab fa-whatsapp"></i></a><a href="#"><i class="fab fa-tripadvisor"></i></a><a href="#"><i class="fab fa-google"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fas fa-envelope"></i></a></div></div>
+        </div>
+        <div class="copyright"><p>© 2026 Mau Tours and Taxis | Authentic Zanzibar experiences</p></div>
+    </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/255777123456?text=Hello%20Mau%20Tours!%20I%20have%20a%20question%20about%20Zanzibar." class="whatsapp-float" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i><span class="whatsapp-text">Chat now</span></a>
+
+<script>
+    // Typewriter
+    const typewriterElement = document.querySelector('.typewriter-title');
+    const text = "Mau Tours and Taxis";
+    let i = 0;
+    function typeWriter() { if (i < text.length) { typewriterElement.innerHTML += text.charAt(i); i++; setTimeout(typeWriter, 100); } }
+    typeWriter();
+    // Mobile menu
+    const toggleBtn = document.getElementById('mobileToggle');
+    const navMenu = document.getElementById('navMenu');
+    toggleBtn.addEventListener('click', () => navMenu.classList.toggle('active'));
+    // Accordion
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    accordionItems.forEach(item => {
+        const question = item.querySelector('.accordion-question');
+        question.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+</script>
+</body>
+</html>
