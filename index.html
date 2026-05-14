@@ -1,196 +1,251 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mau Tours and Taxis – Your trusted Zanzibar travel partner. Tours, taxis, and authentic island experiences.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mau Tours and Taxis – Your trusted Zanzibar travel partner. Tours, taxis, and authentic island experiences."
+    />
     <title>Mau Tours and Taxis | Zanzibar</title>
     <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/tours.css">
-</head>
-<body>
-
-<!-- Header -->
-<header>
-    <div class="container nav-flex">
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/tours.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container nav-flex">
         <div class="logo-area">
-            <img src="images/logo.png" alt="Mau Tours and Taxis Logo" class="logo-img">
-            <div class="logo-text">
-                <h1 class="typewriter-title"></h1>
-                <span>Zanzibar</span>
-            </div>
+          <img
+            src="images/logo.png"
+            alt="Mau Tours and Taxis Logo"
+            class="logo-img"
+          />
+          <div class="logo-text">
+            <h1 class="typewriter-title"></h1>
+            <span>Zanzibar</span>
+          </div>
         </div>
-        <div class="menu-toggle" id="mobileToggle"><i class="fas fa-bars"></i></div>
+        <div class="menu-toggle" id="mobileToggle">
+          <i class="fas fa-bars"></i>
+        </div>
         <ul class="nav-links" id="navMenu">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
         </ul>
-    </div>
-</header>
+      </div>
+    </header>
 
-<!-- Hero Section (text over image) -->
-<section class="hero">
-    <div class="hero-overlay">
+    <!-- Hero Section (text over image) -->
+    <section class="hero">
+      <div class="hero-overlay">
         <div class="hero-content container">
-            <h2>Explore Zanzibar with Confidence</h2>
-            <p>Reliable taxis, guided tours, and authentic local experiences – from Stone Town to the spice farms.</p>
-            <a href="contact.html" class="btn-primary">Plan your trip →</a>
+          <h2>Explore Zanzibar with Confidence</h2>
+          <p>
+            Reliable taxis, guided tours, and authentic local experiences – from
+            Stone Town to the spice farms.
+          </p>
+          <a href="contact.html" class="btn-primary">Plan your trip →</a>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Tours Section (dynamic from tours.js) -->
-<div class="container">
-    <h2 class="section-title">Our Signature Tours</h2>
-    <p class="section-sub">Hand‑picked experiences you'll love</p>
-    <div id="tours-container" class="tours-grid"></div>
-</div>
-
-<!-- Reviews Carousel (simple) -->
-<div class="reviews-section container">
-    <h2 class="section-title">What Travelers Say</h2>
-    <div class="reviews-carousel">
-        <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Amazing experience! The guide was knowledgeable and the spice tour was unforgettable."</p>
-            <p class="review-author">— Sarah, UK</p>
-            <div class="review-links">
-                <a href="https://www.tripadvisor.com/" target="_blank">Read on TripAdvisor</a>
-            </div>
-        </div>
-        <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Very professional taxi service. On time, clean cars, and friendly drivers. Highly recommend."</p>
-            <p class="review-author">— James, Canada</p>
-            <div class="review-links">
-                <a href="https://www.google.com/business" target="_blank">See on Google Business</a>
-            </div>
-        </div>
-        <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"The dhow sunset cruise was magical. Everything perfectly organized. Will use them again!"</p>
-            <p class="review-author">— Amina, Tanzania</p>
-            <div class="review-links">
-                <a href="https://www.tripadvisor.com/" target="_blank">Read more reviews</a>
-            </div>
-        </div>
+    <!-- Tours Section (dynamic from tours.js) -->
+    <div class="container">
+      <h2 class="section-title">Our Signature Tours</h2>
+      <p class="section-sub">Hand‑picked experiences you'll love</p>
+      <div id="tours-container" class="tours-grid"></div>
     </div>
-    <div class="reviews-footer">
-        <a href="https://www.tripadvisor.com/" target="_blank" class="btn-outline small">More on TripAdvisor</a>
-        <a href="https://www.google.com/business" target="_blank" class="btn-outline small">Google Business</a>
-    </div>
-</div>
 
-<!-- Invite sections -->
-<div class="container invite-grid">
-    <div class="invite-card">
+    <!-- Reviews Carousel (simple) -->
+    <div class="reviews-section container">
+      <h2 class="section-title">What Travelers Say</h2>
+      <div class="reviews-carousel">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Amazing experience! The guide was knowledgeable and the spice tour
+            was unforgettable."
+          </p>
+          <p class="review-author">— Sarah, UK</p>
+          <div class="review-links">
+            <a href="https://www.tripadvisor.com/" target="_blank"
+              >Read on TripAdvisor</a
+            >
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Very professional taxi service. On time, clean cars, and friendly
+            drivers. Highly recommend."
+          </p>
+          <p class="review-author">— James, Canada</p>
+          <div class="review-links">
+            <a href="https://www.google.com/business" target="_blank"
+              >See on Google Business</a
+            >
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "The dhow sunset cruise was magical. Everything perfectly organized.
+            Will use them again!"
+          </p>
+          <p class="review-author">— Amina, Tanzania</p>
+          <div class="review-links">
+            <a href="https://www.tripadvisor.com/" target="_blank"
+              >Read more reviews</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="reviews-footer">
+        <a
+          href="https://www.tripadvisor.com/Attraction_Review-g482884-d23481602-Reviews-Bohora_Tours-Zanzibar_Island_Zanzibar_Archipelago.html"
+          target="_blank"
+          class="btn-outline small"
+          >More on TripAdvisor</a
+        >
+        <a
+          href="https://www.google.com/business"
+          target="_blank"
+          class="btn-outline small"
+          >Google Business</a
+        >
+      </div>
+    </div>
+
+    <!-- Invite sections -->
+    <div class="container invite-grid">
+      <div class="invite-card">
         <i class="fas fa-question-circle"></i>
         <h3>Got Questions?</h3>
         <p>Visit our FAQ page for quick answers.</p>
         <a href="faqs.html" class="btn-outline small">Read FAQs →</a>
-    </div>
-    <div class="invite-card">
+      </div>
+      <div class="invite-card">
         <i class="fas fa-blog"></i>
         <h3>Travel Stories</h3>
         <p>Get inspired by our Zanzibar blogs.</p>
         <a href="blogs.html" class="btn-outline small">Read Blogs →</a>
-    </div>
-    <div class="invite-card">
+      </div>
+      <div class="invite-card">
         <i class="fas fa-images"></i>
         <h3>Moments in Photos</h3>
         <p>See Zanzibar through our gallery.</p>
         <a href="gallery.html" class="btn-outline small">View Gallery →</a>
-    </div>
-    <div class="invite-card">
+      </div>
+      <div class="invite-card">
         <i class="fas fa-calendar-check"></i>
         <h3>Ready to Book?</h3>
         <p>Secure your spot today.</p>
-        <a href="booking.html" class="btn-primary small">Book Now →</a>
+        <a href="contact.html" class="btn-primary small">Book Now →</a>
+      </div>
     </div>
-</div>
 
-<!-- Footer -->
-<footer>
-    <div class="container">
+    <!-- Footer -->
+    <footer>
+      <div class="container">
         <div class="footer-grid">
-            <div class="footer-col">
-                <h4>Mau Tours & Taxis</h4>
-                <p>Your trusted partner for exploring Zanzibar. Reliable taxis, authentic tours, local expertise.</p>
+          <div class="footer-col">
+            <h4>Mau Tours & Taxis</h4>
+            <p>
+              Your trusted partner for exploring Zanzibar. Reliable taxis,
+              authentic tours, local expertise.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="faqs.html">FAQs</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <p><i class="fas fa-phone-alt"></i> +255 620 704 852</p>
+            <p><i class="fas fa-envelope"></i> info@mautours.co.tz</p>
+            <p><i class="fas fa-map-marker-alt"></i> Stone Town, Zanzibar</p>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="https://wa.me/255620704852?text=Hello%20Mau%20Tours!%20I%20have%20a%20question%20about%20Zanzibar." target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a
+                href="https://www.tripadvisor.com/Attraction_Review-g482884-d23481602-Reviews-Bohora_Tours-Zanzibar_Island_Zanzibar_Archipelago.html"
+                target="_blank"
+                ><i class="fab fa-tripadvisor"></i
+              ></a>
+              <a href="https://www.google.com" target="_blank"><i class="fab fa-google"></i></a>
+              <a href="https://web.facebook.com/people/bohora_tours_zanzibar/100075915383813/?_rdc=1&_rdr#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="mailto:info@mautours.co.tz" target="_blank"><i class="fas fa-envelope"></i></a>
             </div>
-            <div class="footer-col">
-                <h4>Quick Links</h4>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
-                <a href="blogs.html">Blogs</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="faqs.html">FAQs</a>
-            </div>
-            <div class="footer-col">
-                <h4>Contact</h4>
-                <p><i class="fas fa-phone-alt"></i> +255 777 123 456</p>
-                <p><i class="fas fa-envelope"></i> info@mautours.co.tz</p>
-                <p><i class="fas fa-map-marker-alt"></i> Stone Town, Zanzibar</p>
-            </div>
-            <div class="footer-col">
-                <h4>Follow Us</h4>
-                <div class="social-icons">
-                    <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-tripadvisor"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-google"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
+          </div>
         </div>
         <div class="copyright">
-            <p>© 2026 Mau Tours and Taxis | Authentic Zanzibar experiences</p>
+          <p>© 2026 Mau Tours and Taxis | Authentic Zanzibar experiences</p>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/255777123456?text=Hello%20Mau%20Tours!%20I%27d%20like%20to%20know%20more%20about%20your%20tours." 
-   class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-whatsapp"></i>
-    <span class="whatsapp-text">Chat now</span>
-</a>
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/255620704852?text=Hello%20Mau%20Tours!%20I%27d%20like%20to%20know%20more%20about%20your%20tours."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span class="whatsapp-text">Chat now</span>
+    </a>
 
-<!-- Scripts -->
-<script src="scripts/tours.js"></script>
-<script>
-    // Typewriter effect for "Mau Tours and Taxis"
-    const typewriterElement = document.querySelector('.typewriter-title');
-    const text = "Mau Tours and Taxis";
-    let i = 0;
-    function typeWriter() {
+    <!-- Scripts -->
+    <script src="scripts/tours.js"></script>
+    <script>
+      // Typewriter effect for "Mau Tours and Taxis"
+      const typewriterElement = document.querySelector(".typewriter-title");
+      const text = "Mau Tours and Taxis";
+      let i = 0;
+      function typeWriter() {
         if (i < text.length) {
-            typewriterElement.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, 100);
+          typewriterElement.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, 100);
         }
-    }
-    typeWriter();
+      }
+      typeWriter();
 
-    // Mobile menu toggle
-    const toggleBtn = document.getElementById('mobileToggle');
-    const navMenu = document.getElementById('navMenu');
-    toggleBtn.addEventListener('click', () => navMenu.classList.toggle('active'));
+      // Mobile menu toggle
+      const toggleBtn = document.getElementById("mobileToggle");
+      const navMenu = document.getElementById("navMenu");
+      toggleBtn.addEventListener("click", () =>
+        navMenu.classList.toggle("active"),
+      );
 
-    // Render tours when DOM ready
-    document.addEventListener("DOMContentLoaded", () => {
+      // Render tours when DOM ready
+      document.addEventListener("DOMContentLoaded", () => {
         if (window.ToursModule) {
-            window.ToursModule.renderTours("tours-container");
+          window.ToursModule.renderTours("tours-container");
         }
-    });
-</script>
-</body>
+      });
+    </script>
+  </body>
 </html>

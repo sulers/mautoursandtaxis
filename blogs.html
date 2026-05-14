@@ -1,168 +1,273 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Read our latest travel guides and stories about Zanzibar – from Stone Town secrets to spice tours and Prison Island.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Read our latest travel guides and stories about Zanzibar – from Stone Town secrets to spice tours and Prison Island."
+    />
     <title>Mau Tours and Taxis | Travel Blog</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
     <style>
-        .blog-header {
-            text-align: center;
-            margin: 48px 0 32px;
-        }
+      .blog-header {
+        text-align: center;
+        margin: 48px 0 32px;
+      }
+      .blog-header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 12px;
+      }
+      .blogs-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 32px;
+        margin: 40px 0 60px;
+      }
+      .blog-card {
+        background: white;
+        border-radius: 28px;
+        overflow: hidden;
+        box-shadow: 0 12px 22px rgba(0, 0, 0, 0.04);
+        transition: transform 0.2s;
+      }
+      .blog-card:hover {
+        transform: translateY(-4px);
+      }
+      .blog-img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+      .blog-content {
+        padding: 24px;
+      }
+      .blog-date {
+        font-size: 0.8rem;
+        color: #f26b4f;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .blog-title a {
+        font-size: 1.5rem;
+        color: #1e2f3a;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .blog-title a:hover {
+        color: #f26b4f;
+      }
+      .blog-excerpt {
+        color: #3e5a6b;
+        margin: 12px 0 16px;
+      }
+      .read-more {
+        font-weight: 600;
+        color: #f26b4f;
+        text-decoration: none;
+      }
+      @media (max-width: 768px) {
         .blog-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 12px;
+          font-size: 2rem;
         }
-        .blogs-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 32px;
-            margin: 40px 0 60px;
-        }
-        .blog-card {
-            background: white;
-            border-radius: 28px;
-            overflow: hidden;
-            box-shadow: 0 12px 22px rgba(0,0,0,0.04);
-            transition: transform 0.2s;
-        }
-        .blog-card:hover {
-            transform: translateY(-4px);
-        }
-        .blog-img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-        }
-        .blog-content {
-            padding: 24px;
-        }
-        .blog-date {
-            font-size: 0.8rem;
-            color: #F26B4F;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .blog-title a {
-            font-size: 1.5rem;
-            color: #1E2F3A;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        .blog-title a:hover {
-            color: #F26B4F;
-        }
-        .blog-excerpt {
-            color: #3E5A6B;
-            margin: 12px 0 16px;
-        }
-        .read-more {
-            font-weight: 600;
-            color: #F26B4F;
-            text-decoration: none;
-        }
-        @media (max-width: 768px) {
-            .blog-header h1 { font-size: 2rem; }
-        }
+      }
     </style>
-</head>
-<body>
-
-<header>
-    <div class="container nav-flex">
+  </head>
+  <body>
+    <header>
+      <div class="container nav-flex">
         <div class="logo-area">
-            <img src="images/logo.png" alt="Mau Tours and Taxis Logo" class="logo-img">
-            <div class="logo-text">
-                <h1 class="typewriter-title"></h1>
-                <span>Zanzibar</span>
-            </div>
+          <img
+            src="images/logo.png"
+            alt="Mau Tours and Taxis Logo"
+            class="logo-img"
+          />
+          <div class="logo-text">
+            <h1 class="typewriter-title"></h1>
+            <span>Zanzibar</span>
+          </div>
         </div>
-        <div class="menu-toggle" id="mobileToggle"><i class="fas fa-bars"></i></div>
+        <div class="menu-toggle" id="mobileToggle">
+          <i class="fas fa-bars"></i>
+        </div>
         <ul class="nav-links" id="navMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="blogs.html" class="active">Blogs</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blogs.html" class="active">Blogs</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
         </ul>
-    </div>
-</header>
+      </div>
+    </header>
 
-<main>
-    <div class="container">
+    <main>
+      <div class="container">
         <div class="blog-header">
-            <h1>Mau Travel Journal</h1>
-            <p>Stories, guides, and insider tips from our team on the Spice Island.</p>
+          <h1>Mau Travel Journal</h1>
+          <p>
+            Stories, guides, and insider tips from our team on the Spice Island.
+          </p>
         </div>
 
         <div class="blogs-grid">
-            <!-- Article 1 -->
-            <div class="blog-card">
-                <img class="blog-img" src="https://images.unsplash.com/photo-1603190287605-e6c8e2d5c75f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Stone Town">
-                <div class="blog-content">
-                    <div class="blog-date"><i class="far fa-calendar-alt"></i> May 5, 2026</div>
-                    <h2 class="blog-title"><a href="article-stone-town.html">10 Secrets of Stone Town – A Local’s Guide</a></h2>
-                    <p class="blog-excerpt">Beyond the tourist path: hidden courtyards, the oldest spice shop, and the best rooftop for sunset views...</p>
-                    <a href="article-stone-town.html" class="read-more">Read full story →</a>
-                </div>
+          <!-- Article 1 -->
+          <div class="blog-card">
+            <img
+              class="blog-img"
+              src="./images/tours/stone-town/img4.jpg"
+              alt="Stone Town"
+            />
+            <div class="blog-content">
+              <div class="blog-date">
+                <i class="far fa-calendar-alt"></i> May 5, 2026
+              </div>
+              <h2 class="blog-title">
+                <a href="article-stone-town.html"
+                  >10 Secrets of Stone Town – A Local’s Guide</a
+                >
+              </h2>
+              <p class="blog-excerpt">
+                Beyond the tourist path: hidden courtyards, the oldest spice
+                shop, and the best rooftop for sunset views...
+              </p>
+              <a href="article-stone-town.html" class="read-more"
+                >Read full story →</a
+              >
             </div>
+          </div>
 
-            <!-- Article 2 -->
-            <div class="blog-card">
-                <img class="blog-img" src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Spice tour">
-                <div class="blog-content">
-                    <div class="blog-date"><i class="far fa-calendar-alt"></i> April 28, 2026</div>
-                    <h2 class="blog-title"><a href="article-spice-tours.html">The Ultimate Zanzibar Spice Tour Experience</a></h2>
-                    <p class="blog-excerpt">From vanilla vines to cinnamon trees – why a spice farm visit should be on every traveller’s list...</p>
-                    <a href="article-spice-tours.html" class="read-more">Read full story →</a>
-                </div>
+          <!-- Article 2 -->
+          <div class="blog-card">
+            <img
+              class="blog-img"
+              src="./images/cooking.jpeg"
+              alt="Spice tour"
+            />
+            <div class="blog-content">
+              <div class="blog-date">
+                <i class="far fa-calendar-alt"></i> April 28, 2026
+              </div>
+              <h2 class="blog-title">
+                <a href="article-spice-tours.html"
+                  >The Ultimate Zanzibar Spice Tour Experience</a
+                >
+              </h2>
+              <p class="blog-excerpt">
+                From vanilla vines to cinnamon trees – why a spice farm visit
+                should be on every traveller’s list...
+              </p>
+              <a href="article-spice-tours.html" class="read-more"
+                >Read full story →</a
+              >
             </div>
+          </div>
 
-            <!-- Article 3 -->
-            <div class="blog-card">
-                <img class="blog-img" src="https://images.unsplash.com/photo-1547634378-1b098db19c7c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Prison Island tortoise">
-                <div class="blog-content">
-                    <div class="blog-date"><i class="far fa-calendar-alt"></i> April 20, 2026</div>
-                    <h2 class="blog-title"><a href="article-prison-island.html">Prison Island: Giants, History & Snorkeling</a></h2>
-                    <p class="blog-excerpt">A short boat ride from Stone Town takes you to a sanctuary of giant tortoises and a haunting past...</p>
-                    <a href="article-prison-island.html" class="read-more">Read full story →</a>
-                </div>
+          <!-- Article 3 -->
+          <div class="blog-card">
+            <img
+              class="blog-img"
+              src="./images/tours/prison-island/img1.jpg"
+              alt="Prison Island tortoise"
+            />
+            <div class="blog-content">
+              <div class="blog-date">
+                <i class="far fa-calendar-alt"></i> April 20, 2026
+              </div>
+              <h2 class="blog-title">
+                <a href="article-prison-island.html"
+                  >Prison Island: Giants, History & Snorkeling</a
+                >
+              </h2>
+              <p class="blog-excerpt">
+                A short boat ride from Stone Town takes you to a sanctuary of
+                giant tortoises and a haunting past...
+              </p>
+              <a href="article-prison-island.html" class="read-more"
+                >Read full story →</a
+              >
             </div>
+          </div>
         </div>
-    </div>
-</main>
+      </div>
+    </main>
 
-<footer>
-    <div class="container">
+    <footer>
+      <div class="container">
         <div class="footer-grid">
-            <div class="footer-col"><h4>Mau Tours & Taxis</h4><p>Your trusted partner for exploring Zanzibar. Reliable taxis, authentic tours, local expertise.</p></div>
-            <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="blogs.html">Blogs</a><a href="gallery.html">Gallery</a><a href="faqs.html">FAQs</a></div>
-            <div class="footer-col"><h4>Contact</h4><p><i class="fas fa-phone-alt"></i> +255 777 123 456</p><p><i class="fas fa-envelope"></i> info@mautours.co.tz</p><p><i class="fas fa-map-marker-alt"></i> Stone Town, Zanzibar</p></div>
-            <div class="footer-col"><h4>Follow Us</h4><div class="social-icons"><a href="#"><i class="fab fa-whatsapp"></i></a><a href="#"><i class="fab fa-tripadvisor"></i></a><a href="#"><i class="fab fa-google"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fas fa-envelope"></i></a></div></div>
+          <div class="footer-col">
+            <h4>Mau Tours & Taxis</h4>
+            <p>
+              Your trusted partner for exploring Zanzibar. Reliable taxis,
+              authentic tours, local expertise.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a><a href="about.html">About Us</a
+            ><a href="contact.html">Contact</a><a href="blogs.html">Blogs</a
+            ><a href="gallery.html">Gallery</a><a href="faqs.html">FAQs</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <p><i class="fas fa-phone-alt"></i> +255 620 704 852</p>
+            <p><i class="fas fa-envelope"></i> info@mautours.co.tz</p>
+            <p><i class="fas fa-map-marker-alt"></i> Stone Town, Zanzibar</p>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="https://wa.me/255620704852?text=Hello%20Mau%20Tours!%20I%20have%20a%20question%20about%20Zanzibar."><i class="fab fa-whatsapp"></i></a
+              ><a href="https://www.tripadvisor.com/Attraction_Review-g482884-d23481602-Reviews-Bohora_Tours-Zanzibar_Island_Zanzibar_Archipelago.html"><i class="fab fa-tripadvisor"></i></a
+              ><a href="https://www.google.com" target="_blank"><i class="fab fa-google"></i></a
+              ><a href="https://web.facebook.com/people/bohora_tours_zanzibar/100075915383813/?_rdc=1&_rdr#" target="_blank"><i class="fab fa-facebook-f"></i></a
+              ><a href="mailto:info@mautours.co.tz" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="copyright"><p>© 2026 Mau Tours and Taxis | Authentic Zanzibar experiences</p></div>
-    </div>
-</footer>
+        <div class="copyright">
+          <p>© 2026 Mau Tours and Taxis | Authentic Zanzibar experiences</p>
+        </div>
+      </div>
+    </footer>
 
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/255777123456?text=Hello%20Mau%20Tours!%20I%20have%20a%20question%20about%20your%20tours." class="whatsapp-float" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i><span class="whatsapp-text">Chat now</span></a>
+    <!-- Floating WhatsApp -->
+    <a
+      href="https://wa.me/255620704852?text=Hello%20Mau%20Tours!%20I%20have%20a%20question%20about%20your%20tours."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><i class="fab fa-whatsapp"></i
+      ><span class="whatsapp-text">Chat now</span></a
+    >
 
-<script>
-    const typewriterElement = document.querySelector('.typewriter-title');
-    const text = "Mau Tours and Taxis";
-    let i = 0;
-    function typeWriter() { if (i < text.length) { typewriterElement.innerHTML += text.charAt(i); i++; setTimeout(typeWriter, 100); } }
-    typeWriter();
-    const toggleBtn = document.getElementById('mobileToggle');
-    const navMenu = document.getElementById('navMenu');
-    toggleBtn.addEventListener('click', () => navMenu.classList.toggle('active'));
-</script>
-</body>
+    <script>
+      const typewriterElement = document.querySelector(".typewriter-title");
+      const text = "Mau Tours and Taxis";
+      let i = 0;
+      function typeWriter() {
+        if (i < text.length) {
+          typewriterElement.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, 100);
+        }
+      }
+      typeWriter();
+      const toggleBtn = document.getElementById("mobileToggle");
+      const navMenu = document.getElementById("navMenu");
+      toggleBtn.addEventListener("click", () =>
+        navMenu.classList.toggle("active"),
+      );
+    </script>
+  </body>
 </html>
