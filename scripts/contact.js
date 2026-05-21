@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
     whatsappBtn.addEventListener("click", (e) => {
       e.preventDefault();
       const message = buildMessageWithInterests();
-      window.open(`https://wa.me/255777123456?text=${message}`, "_blank");
+      window.open(`https://wa.me/255620704852?text=${message}`, "_blank");
     });
   }
   if (emailBtn) {
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
       const subject = "Tour Inquiry from Mau Tours website";
       const body = decodeURIComponent(buildMessageWithInterests());
-      window.location.href = `mailto:info@mautours.co.tz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = `mailto:info@mautours.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   }
   if (smsBtn) {
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
       const body = decodeURIComponent(buildMessageWithInterests());
       window.open(
-        `sms:+255777123456?body=${encodeURIComponent(body)}`,
+        `sms:+255620704852?body=${encodeURIComponent(body)}`,
         "_blank",
       );
     });
