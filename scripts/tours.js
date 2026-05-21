@@ -170,7 +170,7 @@ function openTourModal(tour) {
       <div class="tour-modal-description">${tour.longDesc}</div>
       <div class="tour-modal-actions">
         <button class="btn-interested" data-id="${tour.id}">✅ I'm interested</button>
-        <a href="booking.html" class="btn-booknow">📅 Book now</a>
+        <a href="contact.html" class="btn-booknow">📅 Book now</a>
       </div>
     </div>
   `;
