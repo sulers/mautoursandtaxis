@@ -227,5 +227,5 @@ window.ToursModule = {
   renderTours,
   getInterestedTours,
   addInterestedTour,
-  tours
+  tours,
 };
