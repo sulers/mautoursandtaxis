@@ -9,10 +9,6 @@ function typeWriter() {
   }
 }
 typeWriter();
-// Mobile menu
-const toggleBtn = document.getElementById("mobileToggle");
-const navMenu = document.getElementById("navMenu");
-toggleBtn.addEventListener("click", () => navMenu.classList.toggle("active"));
 
 document.addEventListener("DOMContentLoaded", function () {
   // Wait for ToursModule to be ready
