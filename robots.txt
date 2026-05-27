@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mautoursandtaxiszanzibar.com/sitemap.xml

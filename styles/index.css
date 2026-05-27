@@ -71,6 +71,12 @@ header {
     align-items: center;
     flex-wrap: wrap;
 }
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
 .logo-area {
     display: flex;
     align-items: center;
